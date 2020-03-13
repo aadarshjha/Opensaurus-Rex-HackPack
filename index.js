@@ -123,7 +123,7 @@
         MOBILE_SPEED_COEFFICIENT: 1.2,
         RESOURCE_TEMPLATE_ID: 'audio-resources',
         // BUG: Default value of speed is 6.
-        SPEED: 6,
+        SPEED: 10,
         SPEED_DROP_COEFFICIENT: 3
     };
 
@@ -1222,7 +1222,7 @@
      */
     function CollisionBox(x, y, w, h) {
         this.x = x;
-        this.y = y;
+        this.y = x;
         this.width = w;
         this.height = h;
     };
@@ -1526,7 +1526,7 @@
     Trex.config = {
         DROP_VELOCITY: -5,
         // BUG: Where gravity would be changed. Default Value: 0.6.
-        GRAVITY: 0.6,
+        GRAVITY: 0.4,
         HEIGHT: 47,
         HEIGHT_DUCK: 25,
         INIITAL_JUMP_VELOCITY: -10,
@@ -2138,7 +2138,7 @@
      */
     Cloud.config = {
         HEIGHT: 14,
-        MAX_CLOUD_GAP: 400,
+        MAX_CLOUD_GAP: 90000,
         MAX_SKY_LEVEL: 30,
         MIN_CLOUD_GAP: 100,
         MIN_SKY_LEVEL: 71,
